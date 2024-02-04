@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cliente</title>
+</head>
+<body>
+<form id="form1" name="form1" method="post" action="../php/envioCliente.php">
+  <fieldset>
+    <legend><h3>Cliente</h3></legend>
+    <table width="367" border="0">
+      <tbody>
+        <tr>
+          <td><label for="textfield">Cédula:</label></td>
+          <td><input type="text" name="ced" id="ced" placeholder="1234567890" pattern="\d{10}" required autofocus></td>
+        </tr>
+        <tr>
+          <td><label for="nombre2">Nombres Completos:</label></td>
+          <td><input type="text" name="nombre" id="nombre" placeholder="Apellidos y Nombres" pattern="[A-Za-z]+\s[A-Za-z]+\s[A-Za-z]+\s[A-Za-z]+" required></td>
+        </tr>
+        <tr>
+          <td><label for="date2">Fecha de Nacimiento:</label></td>
+          <td><input type="date" name="fnac" id="fnac"  required></td>
+        </tr>
+        <tr>
+          <td><label for="direccion2">Dirección:</label></td>
+          <td><input type="text" name="direccion" id="direccion" pattern="*[A-Za-z0-9\s]+" required></td>
+        </tr>
+        <tr>
+          <td><label for="telefono2">Teléfono:</label></td>
+          <td><input type="textfield" name="telefono" id="telefono"  pattern="\d{10}" required></td>
+        </tr>
+        <tr>
+          <td><label for="email2">Email:</label></td>
+          <td><input type="email" name="email" id="email" placeholder="example@gmail.com" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required></td>
+        </tr>
+        <tr>
+          <td><label for="select2" required >Estado civil:</label ></td>
+          <td><select name="estado" id="estado" >
+            <option value="soltero">Soltero</option>
+            <option value="casado">Casado</option>
+            <option value="viudo">Viudo</option>
+            <option value="divorciado">Divorciado</option>
+          </select></td>
+        </tr>
+      </tbody>
+    </table>
+  </fieldset>
+	<p>&nbsp;  </p>
+	<p>
+	  <input type="submit" name="submit" id="submit" value="Enviar">
+	  <input type="reset" name="reset" id="reset" value="Restablecer">
+  </p>
+</form>
+</body>
+	
+</html>

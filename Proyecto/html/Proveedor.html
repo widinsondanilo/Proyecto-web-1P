@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proveedor</title>
+</head>
+<body>
+<form id="form2" name="form2" method="post" action="../php/envioProveedor.php">
+  <fieldset>
+      <legend><h3>Proveedor</h3></legend>
+    <table width="367" border="0">
+        <tbody>
+          <tr>
+            <td width="144"><label for="textfield">Cédula:</label></td>
+            <td width="207"><input type="text" name="ced_1" id="ced_1" placeholder="175333917-3" pattern="\d{10}"  required autofocus></td>
+          </tr>
+          <tr>
+            <td><label for="nombre5">Nombres Completos:</label></td>
+            <td><input type="textfield" name="nombre_1" id="nombre_1" placeholder="Apellidos y Nombres del Proveedor" pattern="[A-Za-z]+\s[A-Za-z]+\s[A-Za-z]+\s[A-Za-z]+" required></td>
+          </tr>
+          <tr>
+            <td><label for="telefono5">Teléfono:</label></td>
+            <td><input type="textfield" name="telefono_1" id="telefono_1" pattern="\d{10}"  required></td>
+          </tr>
+          <tr>
+            <td><label for="direccion5">Dirección:</label></td>
+            <td><input type="text" name="direccion_1" id="direccion_1" pattern="*[A-Za-z0-9\s]+" required></td>
+          </tr>
+          <tr>
+            <td><label for="email5">Email:</label></td>
+            <td><input type="email" name="email_1" id="email_1" placeholder="example@gmail.com" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required></td>
+          </tr>
+        </tbody>
+    </table>
+    </fieldset>
+	<p>&nbsp;  </p>
+	<p>
+	  <input type="submit" name="submit2" id="submit2" value="Enviar">
+	  <input type="reset" name="reset2" id="reset2" value="Restablecer">
+  </p>
+</form>
+      <p>&nbsp;</p>
+</body>
+</html>

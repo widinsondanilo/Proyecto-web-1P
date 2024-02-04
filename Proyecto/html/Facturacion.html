@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Facturación</title>
+</head>
+<body>
+	
+<form id="form1" name="form1" method="post" action="../php/envioFacturacion.php">
+  <table width="739" border="0" align="center">
+    
+  </table>
+	<tbody>
+    
+  <td width="390" height="272" style="background-color: aqua"><fieldset>
+          <legend><h3>Datos de Venta</h3></legend>
+      <table width="367" border="0">
+            <tbody>
+              <tr>
+                <td width="132"><label for="textfield1">Producto:</label></td>
+                <td width="204"><input type="text" name="producto_1" id="producto_1" required></td>
+              </tr>
+              <tr>
+                <td><label for="select5">Tipo:</label></td>
+                <td><select name="tipo_1" id="tipo_1" required>
+                  <option value="sab">Sábanas</option>
+                  <option value="cov">Covertores</option>
+                  <option value="duv">Duvets</option>
+                  <option value="funAl">Fundas de Almohada</option>
+                </select></td>
+              </tr>
+              <tr>
+                <td><label for="number2">Cantidad:</label></td>
+                <td><input type="number" name="cantidad_1" id="cantidad_1" required></td>
+              </tr>
+              <tr>
+                <td><label for="textfield12">Código:</label></td>
+                <td><input type="text" name="codigo_1" id="codigo_1" required></td>
+              </tr>
+              <tr>
+                <td><label for="date4">Fecha:</label></td>
+                <td><input type="date" name="fecha_1" id="fecha_1" required></td>
+              </tr>
+              <tr>
+                <td><label for="textarea2">Observaciones :</label></td>
+                <td><textarea name="observaciones_1" id="observaciones_1"></textarea></td>
+              </tr>
+              <tr>
+                <td><label for="select6">Forma de pago:</label></td>
+                <td><select name="pago_1" id="pago_1" required>
+                  <option>Efectivo</option>
+                  <option>Tarjeta</option>
+                  <option>Transferencia</option>
+                </select></td>
+              </tr>
+              <tr>
+                <td><label for="textfield13">IVA %:</label></td>
+                <td><input type="text" name="iva_1" id="iva_1" required></td>
+              </tr>
+              <tr>
+                <td><label for="textfield14">Precio final:</label></td>
+                <td><input type="text" name="precio_1" id="precio_1" required></td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset></td>
+   <p>&nbsp;  </p>
+   <p>
+     <input type="submit" name="submit" id="submit" value="Enviar"> 
+     <input type="reset" name="reset" id="reset" value="Restablecer">
+   </p>
+	</form>
+</body>
+</html>
